@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Моя гра</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div id="main-page">
+      <h1 id="game-title">Моя перша гра</h1>
+      <button id="start-game">Почати гру</button>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#start-game').on('click', function() {
+        window.location.href = 'game.html';
+      });
+    });
+  </script>
+</body>
+</html>
